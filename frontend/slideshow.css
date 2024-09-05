@@ -1,0 +1,39 @@
+.slideshow_container {
+    position: relative;
+    text-align: center;
+    background-color: grey;
+}
+.slideshow_note {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.slideshow_prev, .slideshow_next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.slideshow_next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow_prev:hover, .slideshow_next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow_container {
+    display: none;
+}

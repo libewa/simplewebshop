@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Shop</title>
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+    <h1>Welcome to our shop!</h1>
+    <div id="featured-slideshow">
+        <a href="shirt/index.html?color=black">
+            <div id="featured-slideshow_0" class="slideshow_container">
+                <img class="slideshow_image" src="assets/shirt_black.png" alt='a shirt with "ex." printed on it.'/>
+                <p class="slideshow_note" >Also available in green and blue</p>
+            </div>
+        </a>
+        <a href="shirt/index.html?color=blue">
+            <div id="featured-slideshow_1" class="slideshow_container">
+                <img class="slideshow_image" src="assets/shirt_blue.png" alt='a shirt with "ex." printed on it.'/>
+                <p class="slideshow_note" >Also available in green and black</p>
+            </div>
+        </a>
+        <a href="shirt/index.html?color=green">
+            <div id="featured-slideshow_2" class="slideshow_container">
+                <img class="slideshow_image" src="assets/shirt_green.png" alt='a shirt with "ex." printed on it.'/>
+                <p class="slideshow_note" >Also available in blue and black</p>
+            </div>
+        </a>
+        <button class="slideshow_prev" id="featured-slideshow_prev">&#10094;</button>
+        <button class="slideshow_next" id="featured-slideshow_next">&#10095;</button>
+    </div>
+
+    <script src="featured-slideshow.js"></script>
+</body>
+</html>

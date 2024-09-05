@@ -1,0 +1,3 @@
+This is a POC for a web shop made how the Web was intended to be used: mostly HTML, styled with static CSS, and JavaScript only where absolutely necessary <s>(but still not required)</s>(yeah, i use js to prefill locked text fields, because users are stupid. you could unlock the text field, but people would always manage to change them accidentally.).
+
+It sends order details to a backend (currently a 404 page on example.com), which would then do more things, like sending an invoice, because putting iframes to random US companies' webpages is against the idea of a simple website.

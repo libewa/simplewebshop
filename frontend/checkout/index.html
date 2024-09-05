@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Shop - Checkout</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Example Shop</h1>
+    <h2>Checkout</h2>
+    <form action="https://example.com/order" method="post">
+        <label for="product">Product:</label>
+        <input type="text" name="product" id="product" title="Product" disabled>
+        <label for="color">Color:</label>
+        <input type="text" name="color" id="color" title="Color" disabled>
+        <p id="price-with-label">Price: <span id=price>error</span>€</p>
+
+        <fieldset>
+            <legend>Personal info:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Max"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Mustermann"><br><br>
+            <fieldset>
+                <legend>Address:</legend>
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" placeholder="Musterstr. 7"><br>
+                <label for="zipcode">Postal code:</label>
+                <input type="text" name="zipcode" id="zipcode" size="7" placeholder="12345">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" placeholder="Musterstadt"><br>
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" placeholder="Germany">
+            </fieldset>
+            <label for="email">E-Mail address:</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@example.org">
+        </fieldset>
+        <input type="submit" value="Order">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

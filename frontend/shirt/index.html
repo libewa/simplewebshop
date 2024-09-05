@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Shop - Shirt</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Example Shop</h1>
+    <h2>Shirt</h2>
+    <img src="../assets/shirt_black.png" id="img_black" class="specific_image">
+    <img src="../assets/shirt_blue.png" id="img_blue" class="specific_image">
+    <img src="../assets/shirt_green.png" id="img_green" class="specific_image">
+    <form action="../checkout/index.html" method="get">
+        <label for="color">Shirt color</label>
+        <select name="color" id="color" title="Shirt color">
+            <option value="black" id="color-black">Black</option>
+            <option value="blue" id="color-blue">Blue</option>
+            <option value="green" id="color-green">Green</option>
+        </select>
+        <input type="hidden" name="product" value="shirt">
+        <p>Price: <span id=price>9.99</span>€</p>
+        <input type="submit" value="Order">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
