@@ -57,7 +57,7 @@ export default {
     async fetch(request: Request) {
         console.log(`${request.method}: ${request.url}`)
         if (request.url.endsWith("/order")) {
-            if (request.method != "post") {
+            if (request.method != "POST") {
                 return new Response("This endpoit only accepts POST requests.", {
                     "status": 405,
                     "statusText": "Method Not Allowed"
