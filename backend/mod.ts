@@ -31,7 +31,14 @@ function successResponse(formData: FormData) {
         ${formData.get("country")}`)
 }
 function invalidRequestResponse(formData: FormData) {
-    return new Response(formData, {
+    return new Response(`Product = ${formData.get("shirt")}\
+        Color = ${formData.get("color")}\
+        Name: ${formData.get("fname")} ${formData.get("lname")}\
+        Email: ${formData.get("email")}
+        Address:\
+        ${formData.get("street")}\
+        ${formData.get("zipcode")} ${formData.get("city")}\
+        ${formData.get("country")}`, {
         "status": 400,
         "statusText": "Bad Request"
     })
@@ -64,6 +71,7 @@ export default {
                 })
             }
             const formData = await request.formData()
+            console.log(formData)
             if (orderIsValid(formData)) {
                 return successResponse(formData)
             } else {
