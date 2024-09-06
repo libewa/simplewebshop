@@ -11,10 +11,16 @@
     <h2>Checkout</h2>
     <form action="https://example.com/order" method="post">
         <label for="product">Product:</label>
-        <input type="text" name="product" id="product" title="Product" disabled>
+        <input type="text" name="product" id="product" title="Product">
         <label for="color">Color:</label>
-        <input type="text" name="color" id="color" title="Color" disabled>
-        <p id="price-with-label">Price: <span id=price>error</span>€</p>
+        <input type="text" name="color" id="color" title="Color">
+        <noscript><br>
+            As your browser does not support JavaScript scripting, please fill in these fields using the values from your URL bar.<br>
+            Please check the product pages for prices.
+        </noscript>
+        <script>
+          document.write('<p id="price-with-label">Price: <span id=price>error</span>€</p>')
+        </script>
 
         <fieldset>
             <legend>Personal info:</legend>
